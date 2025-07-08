@@ -289,6 +289,7 @@ onMounted(() => {
   line-height: 1.6;
   color: #333;
   overflow-x: hidden;
+  width: 100%;
 }
 
 /* Hero Section */
