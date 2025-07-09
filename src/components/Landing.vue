@@ -19,7 +19,7 @@
           revolucionando la cadena de suministro del café con tecnología de vanguardia
         </p>
 
-        <button @click="redirigir" class="cta-button">
+        <button class="cta-button" @click="redirigir">
           <i class="fas fa-rocket"></i>
           Ir a la plataforma
         </button>
@@ -45,80 +45,261 @@
       </div>
     </section>
 
-    <!-- Features Section -->
+    <!-- Product Video Section -->
+    <section class="video-section product">
+      <div class="container">
+        <h2 class="section-title">Conoce Nuestra Plataforma</h2>
+        <div class="video-content">
+          <div class="video-info">
+            <h3>Innovación en Cada Función</h3>
+            <p>
+              Descubre cómo Qahwa está transformando la industria del café con tecnología de vanguardia.
+              Nuestra plataforma integra inteligencia artificial, análisis de mercado en tiempo real y
+              herramientas de gestión avanzadas para optimizar cada aspecto de tu negocio cafetero.
+            </p>
+            <ul class="video-highlights">
+              <li><i class="fas fa-check"></i> Matching inteligente entre productores y distribuidores</li>
+              <li><i class="fas fa-check"></i> Análisis predictivo de precios y tendencias</li>
+              <li><i class="fas fa-check"></i> Gestión automatizada de inventarios</li>
+              <li><i class="fas fa-check"></i> Trazabilidad completa del producto</li>
+            </ul>
+          </div>
+          <div class="video-container">
+            <div class="video-wrapper">
+              <div class="video-responsive">
+                <iframe
+                    src="https://www.youtube.com/embed/epva2WCBLI8"
+                    title="Demo del Producto"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="features">
       <div class="container">
         <h2 class="section-title">¿Por qué elegir Qahwa?</h2>
         <div class="features-grid">
-          <div class="feature-card" v-for="feature in features" :key="feature.id">
+          <div class="feature-card">
             <div class="feature-icon">
-              <i :class="feature.icon"></i>
+              <i class="fas fa-handshake"></i>
             </div>
-            <h3>{{ feature.title }}</h3>
-            <p>{{ feature.description }}</p>
+            <h3>Conexión Directa</h3>
+            <p>Conectamos productores y distribuidores sin intermediarios, maximizando las ganancias para ambas partes.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h3>Sostenibilidad</h3>
+            <p>Promovemos prácticas sostenibles y comercio justo en toda la cadena de suministro del café.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Análisis en Tiempo Real</h3>
+            <p>Herramientas avanzadas de análisis para optimizar la producción y ventas.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Transacciones Seguras</h3>
+            <p>Plataforma segura con pagos protegidos y garantía de calidad en cada transacción.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <h3>Alcance Global</h3>
+            <p>Acceso a mercados internacionales y oportunidades de exportación.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Tecnología Móvil</h3>
+            <p>Aplicación móvil intuitiva para gestionar tu negocio desde cualquier lugar.</p>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- How It Works Section -->
     <section class="how-it-works">
       <div class="container">
         <h2 class="section-title">¿Cómo funciona?</h2>
         <div class="steps">
-          <div class="step" v-for="(step, index) in steps" :key="step.id">
-            <div class="step-number">{{ index + 1 }}</div>
+          <div class="step">
+            <div class="step-number">1</div>
             <div class="step-content">
-              <h3>{{ step.title }}</h3>
-              <p>{{ step.description }}</p>
+              <h3>Registro</h3>
+              <p>Crea tu cuenta como productor o distribuidor en minutos.</p>
             </div>
             <div class="step-icon">
-              <i :class="step.icon"></i>
+              <i class="fas fa-user-plus"></i>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Perfil</h3>
+              <p>Completa tu perfil con información sobre tus productos o necesidades.</p>
+            </div>
+            <div class="step-icon">
+              <i class="fas fa-edit"></i>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Conexión</h3>
+              <p>Encuentra socios comerciales ideales usando nuestro algoritmo inteligente.</p>
+            </div>
+            <div class="step-icon">
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h3>Negociación</h3>
+              <p>Negocia precios, cantidades y términos directamente en la plataforma.</p>
+            </div>
+            <div class="step-icon">
+              <i class="fas fa-comments"></i>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <h3>Transacción</h3>
+              <p>Completa transacciones seguras con nuestro sistema de pagos integrado.</p>
+            </div>
+            <div class="step-icon">
+              <i class="fas fa-credit-card"></i>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Testimonials Section -->
+    <section class="video-section team">
+      <div class="container">
+        <h2 class="section-title">Conoce a Nuestro Equipo</h2>
+        <div class="video-content">
+          <div class="video-info animate-in">
+            <h3>Pasión por el Café, Experiencia en Tecnología</h3>
+            <p>
+              Nuestro equipo multidisciplinario combina décadas de experiencia en la industria del café
+              con conocimiento tecnológico de vanguardia. Desde ingenieros de software hasta expertos
+              en comercio internacional, todos comparten una misma pasión: transformar el sector cafetero.
+            </p>
+            <ul class="video-highlights">
+              <li><i class="fas fa-check"></i> 15+ años de experiencia en agroindustria</li>
+              <li><i class="fas fa-check"></i> Especialistas en desarrollo de software</li>
+              <li><i class="fas fa-check"></i> Expertos en comercio internacional</li>
+              <li><i class="fas fa-check"></i> Consultores en sostenibilidad</li>
+            </ul>
+          </div>
+          <div class="video-container animate-in">
+            <div class="video-wrapper">
+              <div class="video-responsive">
+                <iframe
+                    src="https://www.youtube.com/embed/TzVDiXxyA2A"
+                    title="Presentación del Equipo"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="testimonials">
       <div class="container">
         <h2 class="section-title">Lo que dicen nuestros usuarios</h2>
         <div class="testimonials-grid">
-          <div class="testimonial-card" v-for="testimonial in testimonials" :key="testimonial.id">
+          <div class="testimonial-card">
             <div class="testimonial-content">
               <div class="stars">
-                <i class="fas fa-star" v-for="star in 5" :key="star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
               </div>
-              <p>"{{ testimonial.text }}"</p>
+              <p>"Qahwa cambió mi vida. Ahora puedo vender directamente a distribuidores internacionales y obtener mejores precios por mi café orgánico."</p>
             </div>
             <div class="testimonial-author">
               <div class="author-avatar">
-                <i :class="testimonial.avatar"></i>
+                <i class="fas fa-user-circle"></i>
               </div>
               <div class="author-info">
-                <h4>{{ testimonial.name }}</h4>
-                <span>{{ testimonial.role }}</span>
+                <h4>María González</h4>
+                <span>Productora de Café - Cusco</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>"La plataforma es increíble. Encontré productores de café de alta calidad y ahora mi negocio ha crecido un 300% en el último año."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <i class="fas fa-user-tie"></i>
+              </div>
+              <div class="author-info">
+                <h4>Roberto Silva</h4>
+                <span>Distribuidor - Lima</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>"Gracias a Qahwa, nuestra cooperativa ha logrado exportar a 5 países nuevos. La tecnología es fácil de usar y muy efectiva."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="author-info">
+                <h4>Ana Vargas</h4>
+                <span>Cooperativa Cafetera - Junín</span>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- CTA Section -->
     <section class="final-cta">
       <div class="container">
         <h2>¿Listo para revolucionar tu negocio cafetero?</h2>
         <p>Únete a miles de productores y distribuidores que ya confían en Qahwa</p>
-        <button @click="redirigir" class="cta-button large">
+        <button class="cta-button large" onclick="redirigir()">
           <i class="fas fa-arrow-right"></i>
           Comenzar ahora
         </button>
       </div>
     </section>
-
-    <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
@@ -145,136 +326,38 @@
         </div>
       </div>
     </footer>
+    <!-- Aquí puedes seguir agregando las demás secciones de la landing page como <section class="features">, etc. -->
   </div>
 </template>
 
-<script setup>
-import { ref, onMounted } from 'vue'
+<script>
+export default {
+  name: 'LandingPage',
+  mounted() {
+    // Animaciones
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
 
-const features = ref([
-  {
-    id: 1,
-    icon: 'fas fa-handshake',
-    title: 'Conexión Directa',
-    description: 'Conectamos productores y distribuidores sin intermediarios, maximizando las ganancias para ambas partes.'
+    document.querySelectorAll('.feature-card, .step, .testimonial-card, .video-info, .video-container')
+        .forEach(el => observer.observe(el));
   },
-  {
-    id: 2,
-    icon: 'fas fa-leaf',
-    title: 'Sostenibilidad',
-    description: 'Promovemos prácticas sostenibles y comercio justo en toda la cadena de suministro del café.'
-  },
-  {
-    id: 3,
-    icon: 'fas fa-chart-line',
-    title: 'Análisis en Tiempo Real',
-    description: 'Herramientas avanzadas de análisis para optimizar la producción y ventas.'
-  },
-  {
-    id: 4,
-    icon: 'fas fa-shield-alt',
-    title: 'Transacciones Seguras',
-    description: 'Plataforma segura con pagos protegidos y garantía de calidad en cada transacción.'
-  },
-  {
-    id: 5,
-    icon: 'fas fa-globe',
-    title: 'Alcance Global',
-    description: 'Acceso a mercados internacionales y oportunidades de exportación.'
-  },
-  {
-    id: 6,
-    icon: 'fas fa-mobile-alt',
-    title: 'Tecnología Móvil',
-    description: 'Aplicación móvil intuitiva para gestionar tu negocio desde cualquier lugar.'
+  methods: {
+    redirigir() {
+      window.location.href = 'https://qahwa-frontend.vercel.app';
+    },
+    mostrarAlerta(tipo) {
+      alert(`Aquí se reproduciría el video: ${tipo}`);
+    }
   }
-])
-
-const steps = ref([
-  {
-    id: 1,
-    title: 'Registro',
-    description: 'Crea tu cuenta como productor o distribuidor en minutos.',
-    icon: 'fas fa-user-plus'
-  },
-  {
-    id: 2,
-    title: 'Perfil',
-    description: 'Completa tu perfil con información sobre tus productos o necesidades.',
-    icon: 'fas fa-edit'
-  },
-  {
-    id: 3,
-    title: 'Conexión',
-    description: 'Encuentra socios comerciales ideales usando nuestro algoritmo inteligente.',
-    icon: 'fas fa-search'
-  },
-  {
-    id: 4,
-    title: 'Negociación',
-    description: 'Negocia precios, cantidades y términos directamente en la plataforma.',
-    icon: 'fas fa-comments'
-  },
-  {
-    id: 5,
-    title: 'Transacción',
-    description: 'Completa transacciones seguras con nuestro sistema de pagos integrado.',
-    icon: 'fas fa-credit-card'
-  }
-])
-
-const testimonials = ref([
-  {
-    id: 1,
-    name: 'María González',
-    role: 'Productora de Café - Cusco',
-    avatar: 'fas fa-user-circle',
-    text: 'Qahwa cambió mi vida. Ahora puedo vender directamente a distribuidores internacionales y obtener mejores precios por mi café orgánico.'
-  },
-  {
-    id: 2,
-    name: 'Roberto Silva',
-    role: 'Distribuidor - Lima',
-    avatar: 'fas fa-user-tie',
-    text: 'La plataforma es increíble. Encontré productores de café de alta calidad y ahora mi negocio ha crecido un 300% en el último año.'
-  },
-  {
-    id: 3,
-    name: 'Ana Vargas',
-    role: 'Cooperativa Cafetera - Junín',
-    avatar: 'fas fa-users',
-    text: 'Gracias a Qahwa, nuestra cooperativa ha logrado exportar a 5 países nuevos. La tecnología es fácil de usar y muy efectiva.'
-  }
-])
-
-const redirigir = () => {
-  window.location.href = 'https://qahwa-frontend.vercel.app' // Cambia por tu URL real
 }
-
-onMounted(() => {
-  // Smooth scroll for navigation
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault()
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      })
-    })
-  })
-
-  // Intersection Observer for animations
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('animate-in')
-      }
-    })
-  })
-
-  document.querySelectorAll('.feature-card, .step, .testimonial-card').forEach(el => {
-    observer.observe(el)
-  })
-})
 </script>
 
 <style scoped>
@@ -284,12 +367,11 @@ onMounted(() => {
   box-sizing: border-box;
 }
 
-.landing-page {
+body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: #333;
   overflow-x: hidden;
-  width: 100%;
 }
 
 /* Hero Section */
@@ -500,6 +582,189 @@ onMounted(() => {
   height: 4px;
   background: linear-gradient(135deg, #4e944f, #8b5e3c);
   border-radius: 2px;
+}
+
+/* Video Sections */
+.video-section {
+  padding: 6rem 0;
+  position: relative;
+}
+
+.video-section.product {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+.video-section.team {
+  background: white;
+}
+
+.video-section .section-title.white {
+  color: white;
+}
+
+.video-section.team {
+  background: linear-gradient(135deg, #2c1810, #4e944f);
+  color: white;
+}
+
+.video-section.team .section-title {
+  color: white;
+}
+
+.video-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.video-info {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s ease;
+}
+
+.video-info.animate-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.video-info h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: #2c1810;
+}
+
+.video-section.team .video-info h3 {
+  color: white;
+}
+
+.video-info p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.video-highlights {
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.video-highlights li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.video-highlights li i {
+  width: 25px;
+  height: 25px;
+  background: linear-gradient(135deg, #4e944f, #8b5e3c);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+.video-container {
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.video-container.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.video-wrapper {
+  position: relative;
+  background: linear-gradient(135deg, #4e944f, #8b5e3c);
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+}
+
+.video-placeholder {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(135deg, #2c1810, #4e944f);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-placeholder::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 40%, rgba(255,255,255,0.1) 50%, transparent 60%);
+  animation: shine 3s ease-in-out infinite;
+}
+
+@keyframes shine {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.play-button:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  background: white;
+}
+
+.play-button i {
+  font-size: 2rem;
+  color: #4e944f;
+  margin-left: 5px;
+}
+
+.video-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255,255,255,0.9);
+  color: #4e944f;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 /* Features Section */
@@ -812,6 +1077,15 @@ onMounted(() => {
     font-size: 2rem;
   }
 
+  .video-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .video-info h3 {
+    font-size: 2rem;
+  }
+
   .features-grid {
     grid-template-columns: 1fr;
   }
@@ -861,5 +1135,24 @@ onMounted(() => {
   .container {
     padding: 0 1rem;
   }
+
+  .video-placeholder {
+    height: 200px;
+  }
+}
+.video-responsive {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 </style>
